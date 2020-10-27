@@ -13,6 +13,39 @@
   }
 }
 
+.dribbble-button {
+  width: 10%;
+  height: 10%;
+  background: rgb(228, 88, 10);
+  margin: 10%;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 88, 10, 1),
+    rgba(255, 0, 243, 1),
+    rgba(228, 88, 10, 1),
+    rgba(255, 0, 243, 1)
+  );
+  background-size: 300%;
+  border-radius: 25px;
+  padding: 10px 40px 10px 40px;
+  animation: button-anim 0.7s alternate infinite ease-in;
+}
+
+.dribbble-logo {
+  width: 60%;
+  height: 80%;
+  fill: white;
+}
+@keyframes button-anim {
+  0% {
+    background-position: 0 0;
+    transform: scale(1);
+  }
+  100% {
+    background-position: 100% 0;
+    transform: scale(1.1);
+  }
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
