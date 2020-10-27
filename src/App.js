@@ -13,7 +13,7 @@ function App() {
           alt="logo"
         />
       </div>
-      This is a dockerized app, ain't it?
+      This is a dockerized app, ain't it??
     </div>
   );
 }
