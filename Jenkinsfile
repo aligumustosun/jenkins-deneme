@@ -1,15 +1,14 @@
 pipeline {
     agent any
-    }
     stages {
         stage('deneme') {
             steps {
                 sh """
                 cat <<EOF >> Dockerfile
-		FROM alpine
+		        FROM alpine
                 ENTRYPOINT ["sleep", "3600"]
-		EOF
-		"""
+		        EOF
+		        """
                 sh 'docker build .'
             }
         }
