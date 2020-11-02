@@ -1,3 +1,162 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 78%;
+  height: 80vh;
+  background: white;
+  flex-direction: row;
+
+  border: gray;
+  border-style: solid;
+  border-width: 0.001em;
+}
+
+.wrapper-1 {
+  border: gray;
+  border-style: solid;
+  border-width: 0.001em;
+  float: left;
+  width: 30%;
+  height: 80vh;
+  background: white;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.wrapper-1-top {
+  width: 100%;
+
+  margin-top: 2vh;
+  background: purple;
+}
+.wrapper-1-top-left {
+  float: left;
+  width: 30%;
+  background: white;
+}
+.wrapper-1-top-right {
+  float: right;
+  width: 34%;
+  background: white;
+}
+
+.wrapper-1-header {
+  float: left;
+  margin-top: 15%;
+  width: 45%;
+  background: white;
+}
+
+.wrapper-1-description {
+  float: left;
+  width: 100%;
+  color: gray;
+  background: white;
+}
+.wrapper-1-bottom {
+  float: left;
+  width: 100%;
+  margin-top: 65%;
+  background: white;
+  font-size: 11px;
+  font-weight: bolder;
+}
+.wrapper-1-bottom-left {
+  float: left;
+  color: blue;
+  width: 45%;
+  background: white;
+}
+
+.wrapper-1-bottom-right {
+  float: right;
+  color: blue;
+  width: 25%;
+  background: white;
+}
+
+.wrapper-2 {
+  float: left;
+  width: 17.5%;
+  height: 80vh;
+  background: red;
+}
+.wrapper-3 {
+  float: left;
+  width: 17.5%;
+  height: 80vh;
+  background: purple;
+}
+.wrapper-4 {
+  float: left;
+  width: 17.5%;
+  height: 80vh;
+  background: aqua;
+}
+
+.wrapper-column {
+  float: left;
+  width: 17.5%;
+  height: 80vh;
+  background: white;
+}
+.wrapper-column-item {
+  border: gray;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: 0.001em;
+  position: relative;
+  height: 40vh;
+  background: white;
+}
+.wrapper-column-item-header {
+  max-height: 20vh;
+  margin-left: 10%;
+  padding-top: 40%;
+
+  background: white;
+}
+.wrapper-column-item-description {
+  margin-top: 10%;
+  max-height: 20vh;
+  margin-left: 10%;
+  color: gray;
+  background: white;
+}
+
+.wrapper-right-column-wrapper {
+}
+.wrapper-right-column {
+  float: left;
+  height: 80vh;
+  display: flex;
+  width: 11.3%;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-right-column-header {
+  text-align: center;
+}
+
+.wrapper-right-column-description {
+  text-align: center;
+
+  font-size: 11px;
+}
+.wrapper-right-column-enter {
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }

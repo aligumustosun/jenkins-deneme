@@ -1,23 +1,15 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:14-alpine'
-            args '-p 3001:3001'
-        }
-    }
-    environment {
-        CI = 'true'
+    agent any
     }
     stages {
-        stage('Build') {
+        stage('deneme') {
             steps {
-                sh 'npm install'
-            }
-        }
-        stage('Test') {
-            steps {
-                sh 'chmod +x ./jenkins/scripts/test.sh'
-                sh './jenkins/scripts/test.sh'
+                sh """
+                cat <<EOT >> Dockerfile
+		FROM alpine
+                ENTRYPOINT ["sleep", "3600"]
+		"""
+                sh 'docker build .'
             }
         }
        
