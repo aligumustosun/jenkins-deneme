@@ -5,9 +5,10 @@ pipeline {
         stage('deneme') {
             steps {
                 sh """
-                cat <<EOT >> Dockerfile
+                cat <<EOF >> Dockerfile
 		FROM alpine
                 ENTRYPOINT ["sleep", "3600"]
+		EOF
 		"""
                 sh 'docker build .'
             }
